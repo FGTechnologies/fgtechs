@@ -3,7 +3,7 @@ import { LayerIcon } from "../Svgs/All";
 
 const Footer = () => {
   return (
-    <footer className="pb-10 text-cente">
+    <footer className="pb-10 text-cente" data-testid="footer">
       <div className="x_container">
         <div className="w-full h-0.5 bg-gray-500 bg-opacity-20 mb-12 mt-24" />
         <div className="flex items-center justify-center text-2xl gap-1 mb-5">
