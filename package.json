@@ -65,6 +65,7 @@
     "@babel/preset-env": "^7.25.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.0",
+    "ajv": "^7.2.4",
     "babel-jest": "^29.7.0",
     "jest": "^27.5.1"
   }
