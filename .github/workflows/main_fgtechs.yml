@@ -59,4 +59,4 @@ jobs:
           app-name: 'fgtechs'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_09EF920AE4AB4D09A91AB49D41137D3F }}
-          package: release.zip
+          package: .
