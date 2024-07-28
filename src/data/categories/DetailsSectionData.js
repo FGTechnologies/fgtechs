@@ -1,14 +1,9 @@
 import {
   UnlimitedIcon,
-  // SupportIcon,
   SecurityIcon,
-  // PricingIcon,
   HeartIcon,
-  CommunityIcon,
-  // GuranteIcon,
   UpdateIcon,
   CheckCircleIcon,
-  // CodeIcon,
   DeviceMobileIcon,
 } from "../../components/Svgs/All";
 
@@ -43,11 +38,6 @@ const DetailsSectionData = [
     des: "We take security seriously when developing our products. Rest easy knowing that we have your back.",
     Icon: SecurityIcon,
   },
-  // {
-  //   title: "Active Community",
-  //   des: "You aren't just purchasing products when you join StackUI. You are becoming part of an amazing community filled with wonderful and passionate people!",
-  //   Icon: CommunityIcon,
-  // },
 ];
 
 export default DetailsSectionData;

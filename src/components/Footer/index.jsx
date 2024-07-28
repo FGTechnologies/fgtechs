@@ -26,7 +26,7 @@ const Footer = () => {
             {" "}
             <a
               target="__blank"
-              href="#"
+              href="www.fgtechs.com"
             >
               Developed by:{" "}
               <b className="text-black dark:text-white">FGT Devs</b>

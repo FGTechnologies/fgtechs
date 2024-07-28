@@ -2,10 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import DarkIcon from "../Svgs/DarkIcon";
 import LightIcon from "../Svgs/LightIcon";
 import theme_toggler from "../../utils/theme_toggler";
-import { DiscordIcon, GithubIcon, LayerIcon } from "../Svgs/All";
+import { LayerIcon } from "../Svgs/All";
 import { useRootContext } from "../../context";
 import { NavLink } from "react-router-dom";
-import Language from "../Svgs/Eye";
 import { motion, useScroll } from "framer-motion";
 
 const Header = () => {
@@ -144,21 +143,6 @@ const Header = () => {
               </NavLink>
             </motion.li>
 
-            {/* <li className="w-full text-left">
-            <NavLink
-              to={`/components`}
-              className={({ isActive }) =>
-                `dark:hover:text-white hover:text-blue-500 ${
-                  isActive
-                    ? "dark:text-white text-blue-500"
-                    : "dark:text-gray-400 text-gray-700"
-                }`
-              }
-            >
-              Components
-            </NavLink>
-          </li> */}
-
             <motion.li className="w-full text-left" whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
               <NavLink
                 to={`/contact`}
@@ -183,35 +167,6 @@ const Header = () => {
                 {state?.currentTheme === "light" ? <DarkIcon /> : <LightIcon />}
               </button>
             </motion.li>
-            {/* <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
-              <button
-                className="flex items-center justify-center w-6 sm:w-7 h-6 sm:h-7 dark:bg-gray-200 bg-gray-600 text-white dark:text-gray-900 rounded-full"
-                onClick={theme_toggle_handler}
-              >
-                {state?.currentTheme === "light" ? <Language /> : <Language />}
-              </button>
-            </motion.li> */}
-            {/* <li>
-            <div className="flex gap-2 items-center">
-             <Language />
-
-              <a
-                href="#"
-                className="bg-blue-700 text-white rounded-sm shadow focus:ring flex items-center gap-0.5 md:px-2 px-2 py-1 md:py-2 text-xs md:text-sm"
-              >
-                <DiscordIcon />
-                <small>Join</small>
-              </a>
-
-              <a
-                href="#"
-                className="bg-blue-700 text-white rounded-sm shadow focus:ring hidden sm:flex items-center gap-0.5 md:px-2 px-1.5 py-1 md:py-2 text-xs md:text-sm"
-              >
-                <GithubIcon />
-                <small>Give star</small>
-              </a>
-            </div>
-          </li> */}
             <li className="lg:hidden">
               <button
                 className="gap-[6px] relative w-12 h-16 flex flex-col justify-center items-center focus:border-none focus:outline-none z-50"
