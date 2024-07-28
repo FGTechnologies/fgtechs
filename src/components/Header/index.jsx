@@ -51,6 +51,7 @@ const Header = () => {
         style={{ scaleX: scrollYProgress }}
       />
       <motion.header
+        data-testid="header"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}

@@ -7,10 +7,11 @@ import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 import Services from "./pages/Services/Services";
 import Team from "./pages/Team/Team";
+import { withAITracking } from '@microsoft/applicationinsights-react-js';
+import { reactPlugin } from "./utils/AppInsights/AppInsights";
 
 
 const App = () => {
-
   return (
     <>
       <main className="bg-gray-50 text-gray-900 dark:bg-dark2 dark:text-gray-100 min-h-screen">
@@ -28,4 +29,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default withAITracking(reactPlugin, App);;
